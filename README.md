@@ -1,4 +1,4 @@
-# pro_demo
+# Growth
 
 ## Project setup
 ```
