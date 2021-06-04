@@ -24,6 +24,7 @@
       margin-left: 20px;
       display: flex;
       flex-direction: column;
+      width: 290px;
 
       .author {
         font-size: 14px;
@@ -75,6 +76,7 @@
         </el-card>
       </el-col>
     </el-row>
+    <!-- <Create /> -->
   </div>
 </template>
 
@@ -82,8 +84,14 @@
 import { computed, reactive, toRefs } from "vue";
 import { useStore } from "vuex";
 
+// import Create from "./Create";
+
 export default {
   name: "TODO",
+
+  // components: {
+  //   Create,
+  // },
 
   setup(props, ctx) {
     const store = useStore();

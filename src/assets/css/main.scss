@@ -1,0 +1,24 @@
+.inner {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.p20 {
+  padding: 20px;
+}
+
+.bs4 {
+  box-shadow: 0 10px 20px 0 rgb(0 0 0 / 4%);
+}
+
+.app-container {
+  .main-wrap {
+    margin-top: 30px;
+  }
+
+  .content-wrap {
+    padding: 20px 10px;
+  }
+}

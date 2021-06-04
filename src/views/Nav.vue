@@ -21,7 +21,6 @@ export default {
     const state = reactive({
       activeKey: "",
     });
-
     const router = useRouter();
     const route = useRoute();
 
