@@ -52,10 +52,10 @@
               <template #dropdown>
                 <el-dropdown-menu>
                   <el-dropdown-item @click="handleProcessing(item.id)">
-                    Processing
+                    开始处理
                   </el-dropdown-item>
                   <el-dropdown-item @click="handleCompleted(item.id)">
-                    Completed
+                    已经完成
                   </el-dropdown-item>
                 </el-dropdown-menu>
               </template>
