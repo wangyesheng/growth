@@ -27,14 +27,14 @@
       width: 290px;
 
       .author {
-        font-size: 14px;
+        font-size: 15px;
         margin-bottom: 5px;
-        color: #666;
+        color: #333;
       }
 
       .label {
         font-size: 13px;
-        color: #333;
+        color: #666;
       }
     }
   }

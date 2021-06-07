@@ -1,9 +1,10 @@
 <script>
 import { reactive } from "vue";
+
 export default {
   setup() {
     const state = reactive({
-      username: "eos",
+      appName: "Growth",
     });
 
     return () => {
@@ -11,7 +12,7 @@ export default {
         <>
           <div class="header-wrap">
             <div class="inner flex">
-              <div class="logo">Growth</div>
+              <div class="logo">{state.appName}</div>
               <div class="user">
                 <img src={require("../assets/images/user-avatar.jpg")} />
               </div>
@@ -39,6 +40,8 @@ export default {
   }
 
   .user {
+    cursor: pointer;
+    transition: all .3s;
     img {
       width: 38px;
       height: 38px;

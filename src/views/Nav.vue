@@ -8,7 +8,7 @@
       <el-menu-item index="/todo">待处理</el-menu-item>
       <el-menu-item index="/processing">处理中</el-menu-item>
       <el-menu-item index="/completed">已处理</el-menu-item>
-      <el-button type="primary" size="medium" class="NewButton" @click="handleNew()">新增</el-button>
+      <!-- <el-button type="primary" size="medium" class="NewButton" @click="handleNew()">新增</el-button> -->
     </el-menu>
   </div>
   <el-dialog
@@ -53,7 +53,6 @@ export default {
       router.push(key);
     };
 
-    // const handleNew =
     return {
       ...toRefs(state),
       handleNavTo,
@@ -74,6 +73,7 @@ export default {
   }
 };
 </script>
+
 <style lang="scss" scoped>
 .nav-wrap .NewButton{
   margin: 10px 10px;
