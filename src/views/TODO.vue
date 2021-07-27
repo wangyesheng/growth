@@ -76,7 +76,6 @@
         </el-card>
       </el-col>
     </el-row>
-    <!-- <Create /> -->
   </div>
 </template>
 
@@ -84,14 +83,8 @@
 import { computed, reactive, toRefs } from "vue";
 import { useStore } from "vuex";
 
-// import Create from "./Create";
-
 export default {
   name: "TODO",
-
-  // components: {
-  //   Create,
-  // },
 
   setup(props, ctx) {
     const store = useStore();
@@ -108,6 +101,25 @@ export default {
     const handleCompleted = (id) => {
       store.commit("CHANGE_PLAN_STATUS", { id, status: "COMPLETED" });
     };
+
+    // const obj = { id: 1, name: "eos" };
+    // const effectFn = () => {};
+    // let targetMap = new WeakMap();
+    // function track(target, key) {
+    //   let depsMap = targetMap.get(target);
+    //   if (!depsMap) {
+    //     targetMap.set(target, (depsMap = new Map()));
+    //   }
+    //   let deps = depsMap.get(key);
+    //   if (!deps) {
+    //     depsMap.set(key, (deps = new Set()));
+    //   }
+    //   if (effectFn && !deps.has(effectFn)) {
+    //     deps.add(effectFn);
+    //   }
+    //   console.log(targetMap);
+    // }
+    // track(obj, "id");
 
     return {
       ...toRefs(state),
